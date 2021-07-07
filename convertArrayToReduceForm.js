@@ -8,8 +8,7 @@ arrayPrint(array,n);
 
 
 function convertArray(array,n){
-    let temp=new Array();
-    temp=array;
+    let temp=[...array];
     temp.sort((a,b)=>a-b);
     let umap=new Map();
     // One by one insert elements of sorted
